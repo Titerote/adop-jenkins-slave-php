@@ -13,7 +13,7 @@ ENV SWARM_PASSWORD=jenkins
 
 # Slave Env Variables
 ENV SLAVE_NAME="Swarm_Slave"
-ENV SLAVE_LABELS="docker aws ldap"
+ENV SLAVE_LABELS="docker aws ldap php ansible"
 ENV SLAVE_MODE="exclusive"
 ENV SLAVE_EXECUTORS=1
 ENV SLAVE_DESCRIPTION="Core Jenkins Slave"

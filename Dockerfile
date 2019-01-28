@@ -20,7 +20,7 @@ ENV SWARM_PASSWORD=jenkins
 
 # Slave Env Variables
 ENV SLAVE_NAME="Swarm_Slave"
-ENV SLAVE_LABELS="aws ldap"
+ENV SLAVE_LABELS="aws ldap ansible php"
 ENV SLAVE_MODE="exclusive"
 ENV SLAVE_EXECUTORS=1
 ENV SLAVE_DESCRIPTION="Core Jenkins Slave"

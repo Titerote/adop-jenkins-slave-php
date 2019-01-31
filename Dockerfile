@@ -2,12 +2,12 @@ FROM centos:centos7.2.1511
 MAINTAINER "Nick Griffin" <nicholas.griffin@accenture.com>
 
 # Java Env Variables
-ENV JAVA_VERSION=1.8.0_45
 # Go to: https://www.oracle.com/technetwork/java/javase/downloads/index.html
 # Navigate to the middle of the page --> Server JRE -> then select linux64
 # https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/server-jre-8u201-linux-x64.tar.gz
 ENV JAVA_JRE_HASH=42970487e3af4f5aa5bca3f542482c60
 ENV JAVA_JRE_NAME=8u201
+ENV JAVA_VERSION=1.8.0_201
 ENV JAVA_JRE_LASTNAME=b09
 ENV JAVA_TARBALL=server-jre-${JAVA_JRE_NAME}-linux-x64.tar.gz
 ENV JAVA_HOME=/opt/java/jdk${JAVA_VERSION}
@@ -37,6 +37,7 @@ RUN yum install -y which \
     openssl \
     python-pip \
     libxslt \
+    ant \
     ansible && \
     yum clean all 
 
